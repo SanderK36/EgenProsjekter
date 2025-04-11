@@ -1,0 +1,139 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1501436513145-30f24e19fcc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'); /* Misty forest */
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'MedievalSharp', cursive;
+    color: #2c1e0f; /* Dark brown */
+}
+#app {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(245, 235, 215, 0.9); /* Parchment with slight transparency */
+    border: 4px solid #8b5a2b; /* Wood-brown border */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.inventoryBox {
+    display: none;
+    position: absolute;
+    left: 400px;
+    border: 3px solid #3c2f2f; /* Leather edge */
+    background: #d9c2a7 url('https://www.transparenttextures.com/patterns/leather.png'); /* Leather texture */
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    border-radius: 8px;
+    font-family: 'MedievalSharp', cursive;
+    color: #2c1e0f;
+    font-size: 16px;
+    max-width: 300px;
+}
+
+li {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px dashed #8b5a2b; /* Hand-drawn line */
+    font-size: 18px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    position: relative;
+    z-index: 10;
+    padding: 8px 15px;
+    margin: 5px;
+    background: #5c4033 url('https://www.transparenttextures.com/patterns/wood-pattern.png'); /* Wood texture */
+    color: #f5e6cc;
+    border: 2px solid #3c2f2f;
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    background: #8b5a2b;
+    color: #ffd700;
+    box-shadow: 0 0 10px #ffd700, 0 2px 6px rgba (0, 0, 0, 0.6);
+}
+
+.adventureLog {
+    margin-top: 20px;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    background-color: #fff; 
+    max-height: 200px; 
+    overflow-y: auto; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    background: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* Subtle paper texture */
+    border: 2px solid #5c4033; /* Darker wood */
+    border-radius: 5px;
+}
+
+li:last-child {
+    border-bottom: none; /* No line on last item */
+}
+
+li strong {
+    font-family: 'Cinzel', serif;
+    color: #4a2c1a; /* Rich brown */
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    color: #4a2c1a;
+    font-size: 28px;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+    border-bottom: 2px solid #8b5a2b;
+    padding-bottom: 5px;
+}
+
+p {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 18px;
+    margin: 5px 0;
+    color: #2c1e0f;
+}
+
+.adventureLog {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #5c4033;
+    background: #f5e6cc url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    max-height: 200px;
+    overflow-y: auto;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 16px;
+    color: #2c1e0f;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.adventureLog p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.orcImage {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    border: 3px solid #5c4033; /* Wood-brown frame */
+    border-radius: 5px;
+    margin: 10px auto;
+    display: block; /* Center it */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Dark shadow */
+    background: #f5e6cc; /* Parchment behind image */
+    padding: 5px; /* Inner padding */
+}
