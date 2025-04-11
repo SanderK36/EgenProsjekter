@@ -1,17 +1,17 @@
-const model = {
+ const model = {
     app:{},
     input:{},
     data:{
         characters:[
-            {name:"Gandalf", classType:"mage", hp:150, strength:10,  magic:235, mana:100, xp: 0, level: 1, xpToNextLevel:100, inventory:[{name: "Great Staff", count: 1}, {name: "Magic Ring", cound:1}, {name: "Health potion", count: 1}, {name: "Mana potion", count: 1}]},
+            {name:"Gandalf", classType:"mage", hp:120, strength:15,  magic:200, mana:100, xp: 0, level: 1, xpToNextLevel:100, inventory:[{name: "Great Staff", count: 1}, {name: "Magic Ring", cound:1}, {name: "Health potion", count: 1}, {name: "Mana potion", count: 1}]},
 
-            {name:"Aragorn", classType:"warrior", hp:275, strength:80,  magic:20, stamina: 100, xp: 0, level: 1, xpToNextLevel:100, inventory:[{name: "Sword of Strider", count: 1}, {name: "Health potion", count: 1}, {name: "Shield of strength", count: 1}]},
+            {name:"Aragorn", classType:"warrior", hp:250, strength:90,  magic:20, stamina: 100, xp: 0, level: 1, xpToNextLevel:100, inventory:[{name: "Sword of Strider", count: 1}, {name: "Health potion", count: 1}, {name: "Shield of strength", count: 1}]},
 
-            {name:"Legolas", classType:"archer", hp:180, strength:60,  magic:30, stamina: 100, xp: 0, level: 1, xpToNextLevel:100, inventory:[{name: "Bow of the Galadhrim", count: 1}, {name: "Health potion", count: 1}, {name: "Elven arrows", count: 100}, {name: "Elven dagger", count: 1}]},
+            {name:"Legolas", classType:"archer", hp:160, strength:70,  magic:40, stamina: 100, xp: 0, level: 1, xpToNextLevel:100, inventory:[{name: "Bow of the Galadhrim", count: 1}, {name: "Health potion", count: 1}, {name: "Elven arrows", count: 100}, {name: "Elven dagger", count: 1}]},
 
-            {name:"Frodo", classType:"thief", hp:150, strength:40,  magic:50, stamina: 100, xp: 0, level: 1, xpToNextLevel:100, inventory:[{name: "Hobbit short sword of dexterity", count: 1}, {name: "Health potion", count: 1}, {name: "Ring of invisibility", count: 1}]},
+            {name:"Frodo", classType:"thief", hp:130, strength:50,  magic:50, stamina: 100, xp: 0, level: 1, xpToNextLevel:100, inventory:[{name: "Hobbit short sword of dexterity", count: 1}, {name: "Health potion", count: 1}, {name: "Ring of invisibility", count: 1}]},
 
-            {name:"Gimli", classType:"dwarf", hp:220, strength:90,  magic:10, stamina: 100, xp: 0, level: 1, xpToNextLevel:100, inventory:[{name: "Axe of the Dwarves", count: 1}, {name: "Health potion", count: 1},]},
+            {name:"Gimli", classType:"dwarf", hp:200, strength:100,  magic:15, stamina: 100, xp: 0, level: 1, xpToNextLevel:100, inventory:[{name: "Axe of the Dwarves", count: 1}, {name: "Health potion", count: 1},]},
         ],
         gold: 0,
         selectedCharacter: null,
