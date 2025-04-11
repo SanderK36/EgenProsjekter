@@ -26,7 +26,7 @@ body {
     background: rgb(40, 30, 20) url('https://via.placeholder.com/800x600.png?text=Fallback+Background') center/cover;
 }
 
-/* Character Selection Screen */
+
 .character-select-container {
     text-align: center;
 }
@@ -87,7 +87,7 @@ body {
     justify-content: center;
 }
 
-/* Adventure Screen */
+
 .adventure-container {
     display: flex;
     flex-direction: column;
@@ -177,7 +177,7 @@ body {
     margin: 5px 0;
 }
 
-/* General Button Styles */
+
 button {
     position: relative;
     z-index: 10;
@@ -203,7 +203,7 @@ button:hover {
     transform: translateY(-2px);
 }
 
-/* Orc Image */
+
 .orcImage {
     width: 200px;
     height: auto;
@@ -216,7 +216,7 @@ button:hover {
     padding: 5px;
 }
 
-/* Modals (General) */
+
 .transition-overlay,
 .travel-modal,
 .item-modal,
@@ -328,7 +328,7 @@ button:hover {
     transform: translateY(-2px);
 }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
     #app {
         margin: 10px;
