@@ -1,43 +1,53 @@
 body {
-    background-image: url('https://images.unsplash.com/photo-1501436513145-30f24e19fcc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'); /* Misty forest */
+    background: #2c1e0f; /* Dark brown body bg */
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
     font-family: 'MedievalSharp', cursive;
-    color: #2c1e0f; /* Dark brown */
+    color: #f5e6cc; /* Brighter cream for default text */
 }
+
 #app {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(245, 235, 215, 0.9); /* Parchment with slight transparency */
-    border: 4px solid #8b5a2b; /* Wood-brown border */
+    background: rgba(40, 30, 20, 0.85); /* Darker, more opaque bg to shield from images */
+    border: 4px solid #8b5a2b;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    color: #f5e6cc; /* Brighter text for app content */
 }
+
 .inventoryBox {
     display: none;
     position: absolute;
     left: 400px;
-    border: 3px solid #3c2f2f; /* Leather edge */
-    background: #d9c2a7 url('https://www.transparenttextures.com/patterns/leather.png'); /* Leather texture */
+    border: 3px solid #3c2f2f;
+    background: rgba(232, 217, 184, 0.9); /* Semi-transparent lighter leather */
     padding: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 20;
     border-radius: 8px;
     font-family: 'MedievalSharp', cursive;
-    color: #2c1e0f;
+    color: #f5e6cc; /* Brighter text */
     font-size: 16px;
     max-width: 300px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7); /* Dark shadow for contrast */
 }
 
 li {
     position: relative;
     margin-bottom: 10px;
     padding: 10px;
-    border-bottom: 1px dashed #8b5a2b; /* Hand-drawn line */
+    border-bottom: 1px dashed #8b5a2b;
     font-size: 18px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: #f5e6cc; /* Brighter for list items */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7); /* Dark shadow */
+    background: rgba(40, 30, 20, 0.6); /* Subtle dark bg for list items */
+    border-radius: 5px;
 }
 
 button {
@@ -45,8 +55,8 @@ button {
     z-index: 10;
     padding: 8px 15px;
     margin: 5px;
-    background: #5c4033 url('https://www.transparenttextures.com/patterns/wood-pattern.png'); /* Wood texture */
-    color: #f5e6cc;
+    background: #5c4033 url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+    color: #fff8e1; /* Keep brighter cream */
     border: 2px solid #3c2f2f;
     border-radius: 5px;
     font-family: 'Cinzel', serif;
@@ -55,47 +65,60 @@ button {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7); /* Dark shadow */
 }
 
 button:hover {
     background: #8b5a2b;
-    color: #ffd700;
-    box-shadow: 0 0 10px #ffd700, 0 2px 6px rgba (0, 0, 0, 0.6);
+    color: #ffe066; /* Softer gold for hover */
+    box-shadow: 0 0 10px #ffd700, 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 .adventureLog {
     margin-top: 20px;
-    padding: 10px; 
-    border: 1px solid #ccc; 
-    background-color: #fff; 
-    max-height: 200px; 
-    overflow-y: auto; 
+    padding: 15px;
+    border: 2px solid #5c4033;
+    background: rgba(40, 30, 20, 0.9); /* Darker bg to shield from image */
+    max-height: 200px;
+    overflow-y: auto;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 16px;
+    color: #f5e6cc; /* Brighter text */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.adventureLog p {
+    margin: 5px 0;
+    line-height: 1.4;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7); /* Dark shadow */
 }
 
 ul {
     list-style: none;
     padding: 0;
-    background: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* Subtle paper texture */
-    border: 2px solid #5c4033; /* Darker wood */
+    background: rgba(40, 30, 20, 0.8); /* Darker bg for list */
+    border: 2px solid #5c4033;
     border-radius: 5px;
 }
 
 li:last-child {
-    border-bottom: none; /* No line on last item */
+    border-bottom: none;
 }
 
 li strong {
     font-family: 'Cinzel', serif;
-    color: #4a2c1a; /* Rich brown */
+    color: #ffd700; /* Gold for emphasis */
     font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7); /* Dark shadow */
 }
 
 h2 {
     font-family: 'Cinzel', serif;
-    color: #4a2c1a;
+    color: #ffd700; /* Gold for headers */
     font-size: 28px;
     text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.8); /* Stronger dark shadow */
     margin: 10px 0;
     border-bottom: 2px solid #8b5a2b;
     padding-bottom: 5px;
@@ -105,35 +128,144 @@ p {
     font-family: 'MedievalSharp', cursive;
     font-size: 18px;
     margin: 5px 0;
-    color: #2c1e0f;
-}
-
-.adventureLog {
-    margin-top: 20px;
-    padding: 15px;
-    border: 2px solid #5c4033;
-    background: #f5e6cc url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-    max-height: 200px;
-    overflow-y: auto;
-    font-family: 'MedievalSharp', cursive;
-    font-size: 16px;
-    color: #2c1e0f;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #f5e6cc; /* Brighter cream */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7); /* Dark shadow */
+    background: rgba(40, 30, 20, 0.6); /* Subtle dark bg for paragraphs */
+    padding: 5px;
     border-radius: 5px;
-}
-.adventureLog p {
-    margin: 5px 0;
-    line-height: 1.4;
 }
 
 .orcImage {
-    width: 200px; /* Adjust size as needed */
+    width: 200px;
     height: auto;
-    border: 3px solid #5c4033; /* Wood-brown frame */
+    border: 3px solid #5c4033;
     border-radius: 5px;
     margin: 10px auto;
-    display: block; /* Center it */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Dark shadow */
-    background: #f5e6cc; /* Parchment behind image */
-    padding: 5px; /* Inner padding */
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: #fff8e1; /* Keep brighter bg for orc frame */
+    padding: 5px;
+}
+
+.transition-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: #ffffff; /* Pure white for overlay */
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.transition-overlay h3 {
+    font-size: 36px;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Keep dark shadow */
+}
+
+.transition-overlay p {
+    font-size: 20px;
+    margin: 10px 0 0;
+    font-family: 'MedievalSharp', cursive;
+    color: #eeeeee; /* Slightly off-white */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Dark shadow */
+}
+
+.travel-modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background: rgba(40, 30, 20, 0.9); /* Darker bg for modal */
+    border: 4px solid #8b5a2b;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.travel-modal h3 {
+    font-family: 'Cinzel', serif;
+    color: #ffd700; /* Gold for modal header */
+    font-size: 24px;
+    margin: 0 0 15px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.8); /* Dark shadow */
+}
+
+.travel-buttons {
+    margin: 10px 0;
+}
+
+.travel-buttons button {
+    display: block;
+    width: 80%;
+    margin: 5px auto;
+}
+
+.travel-modal button:last-child {
+    background: #8b0000;
+    border-color: #5c0000;
+}
+
+.travel-modal button:last-child:hover {
+    background: #a30000;
+    color: #fff;
+    box-shadow: 0 0 10px #ff4040;
+}
+
+.item-modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background: rgba(40, 30, 20, 0.9);
+    border: 4px solid #8b5a2b;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.item-modal h3 {
+    font-family: 'Cinzel', serif;
+    color: #ffd700;
+    font-size: 24px;
+    margin: 0 0 15px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+.item-buttons {
+    margin: 10px 0;
+}
+
+.item-buttons button {
+    display: block;
+    width: 80%;
+    margin: 5px auto;
+}
+
+.item-modal button:last-child {
+    background: #8b0000;
+    border-color: #5c0000;
+}
+
+.item-modal button:last-child:hover {
+    background: #a30000;
+    color: #fff;
+    box-shadow: 0 0 10px #ff4040;
 }

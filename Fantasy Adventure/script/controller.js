@@ -1,15 +1,15 @@
-function showInventory(index, button){
+function showInventory(index, button) {
     const inventoryDiv = button.nextElementSibling;
     const character = model.data.characters[index];
-    const inventoryList = character.inventory.join(", ");
+    const inventoryList = character.inventory.map(item => `${item.name} (${item.count})`).join(", ");
 
-    if(inventoryDiv.style.display === "none" || inventoryDiv.innerHTML === "") {
+    if (inventoryDiv.style.display === "none" || inventoryDiv.innerHTML === "") {
         inventoryDiv.innerHTML = `<strong>Inventory:</strong> ${inventoryList}`;
         inventoryDiv.style.display = "block";
     } else {
         inventoryDiv.style.display = "none";
     }
- }
+}
 
  function startAdventure(index) {
     model.data.selectedCharacter = model.data.characters[index];
@@ -76,14 +76,22 @@ function showInventory(index, button){
     orc.hp -= damage;
     if (orc.hp <= 0) {
         addToLog("The orc is defeated!");
+        const xpGain = 50; 
+        char.xp += xpGain;
+        addToLog(`${char.name} gains ${xpGain} XP! Total XP: ${char.xp}`);
+        levelUp(char);
         const drop = model.data.orcDrops[Math.floor(Math.random() * model.data.orcDrops.length)];
-        if(drop === "10 gold"){
+        if (drop === "10 Gold") {
             model.data.gold += 10;
             addToLog(`${char.name} finds 10 gold! Total gold: ${model.data.gold}`);
         } else {
-            char.inventory.push(drop);
+            const existingItem = char.inventory.find(item => item.name === drop);
+            if (existingItem) {
+                existingItem.count += 1;
+            } else {
+                char.inventory.push({name: drop, count: 1});
+            }
             addToLog(`${char.name} finds a ${drop} from the orc!`);
-
         }
         model.data.currentEnemy = null;
     } else {
@@ -130,16 +138,62 @@ function endAdventure() {
 }
 
 function useItem() {
-    let char = model.data.selectedCharacter;
-    const healthPotionIndex = char.inventory.indexOf("Health potion");
-    if(healthPotionIndex !== -1) {
-        char.hp += 50;
-        char.inventory.splice(healthPotionIndex, 1);
-        addToLog(`${char.name} uses a Health potion, resotring 50 HP. HP: ${char.hp}`);
+    const modal = app.querySelector("#itemModal");
+    let modalContent = /*HTML*/ `
+        <h3>Use an Item</h3>
+        <div class="item-buttons">
+    `;
+    const char = model.data.selectedCharacter;
+    const usableItems = char.inventory.filter(item => ["Health potion", "Mana potion"].includes(item.name));
+    if (usableItems.length === 0) {
+        modalContent += /*HTML*/ `<p>No usable items available!</p>`;
     } else {
-        addToLog(`${char.name} has no Health potions left!`);
+        usableItems.forEach((item, index) => {
+            modalContent += /*HTML*/ `
+                <button onclick="useSelectedItem('${item.name}')">${item.name} (${item.count})</button>
+            `;
+        });
     }
+    modalContent += /*HTML*/ `
+        </div>
+        <button onclick="hideItemModal()">Cancel</button>
+    `;
+    modal.innerHTML = modalContent;
+    modal.style.display = "block";
+    modal.style.opacity = "0";
+    setTimeout(() => modal.style.opacity = "1", 10);
+}
+
+function useSelectedItem(itemName) {
+    let char = model.data.selectedCharacter;
+    const item = char.inventory.find(i => i.name === itemName);
+    if (!item || item.count <= 0) {
+        addToLog(`${char.name} has no ${itemName} left!`);
+        hideItemModal();
+        updateView();
+        return;
+    }
+
+    if (itemName === "Health potion") {
+        char.hp += 50;
+        addToLog(`${char.name} uses a Health potion, restoring 50 HP. HP: ${char.hp}`);
+    } else if (itemName === "Mana potion") {
+        char.mana = (char.mana || 0) + 50;
+        addToLog(`${char.name} uses a Mana potion, restoring 50 mana. Mana: ${char.mana}`);
+    }
+
+    item.count -= 1;
+    if (item.count === 0) {
+        char.inventory.splice(char.inventory.indexOf(item), 1);
+    }
+    hideItemModal();
     updateView();
+}
+
+function hideItemModal() {
+    const modal = app.querySelector("#itemModal");
+    modal.style.opacity = "0";
+    setTimeout(() => modal.style.display = "none", 300);
 }
 
 function specialAttack() {
@@ -147,19 +201,36 @@ function specialAttack() {
     let orc = model.data.currentEnemy;
     let damage = 0;
     let cost = 30;
-    if(char.mana >= cost || char.stamina >= cost) {
-        if(char.classType === "mage") {
+    if (char.mana >= cost || char.stamina >= cost) {
+        if (char.classType === "mage") {
             damage = char.magic;
             char.mana -= cost;
-            addToLog(`${char.name} unleashes Light of the Istari, dealing ${damage} damage! Mana: ${char.mana}`)
+            addToLog(`${char.name} unleashes Light of the Istari, dealing ${damage} damage! Mana: ${char.mana}`);
         } else if (char.classType === "warrior") {
             damage = char.strength * 1.5;
             char.stamina -= cost;
-            addToLog(`${char.name} performs a mighty cleave, dealing ${damage} damage! Stamina: ${char.stamina}`)
+            addToLog(`${char.name} performs a mighty cleave, dealing ${damage} damage! Stamina: ${char.stamina}`);
         }
         orc.hp -= damage;
-        if(orc.hp <= 0) {
+        if (orc.hp <= 0) {
             addToLog("The orc is defeated!");
+            const xpGain = 50;
+            char.xp += xpGain;
+            addToLog(`${char.name} gains ${xpGain} XP! Total XP: ${char.xp}`);
+            levelUp(char);
+            const drop = model.data.orcDrops[Math.floor(Math.random() * model.data.orcDrops.length)];
+            if (drop === "10 Gold") {
+                model.data.gold += 10;
+                addToLog(`${char.name} finds 10 gold! Total gold: ${model.data.gold}`);
+            } else {
+                const existingItem = char.inventory.find(item => item.name === drop);
+                if (existingItem) {
+                    existingItem.count += 1;
+                } else {
+                    char.inventory.push({name: drop, count: 1});
+                }
+                addToLog(`${char.name} finds a ${drop} from the orc!`);
+            }
             model.data.currentEnemy = null;
         } else {
             orcAttack();
@@ -171,24 +242,87 @@ function specialAttack() {
 }
 
 function travel() {
-    const nextLocationIndex = (model.data.locations.indexOf(model.data.currentLocation) + 1) % model.data.locations.length;
-    model.data.currentLocation = model.data.locations[nextLocationIndex];
-    addToLog(`${model.data.selectedCharacter.name} travels to ${model.data.currentLocation.name}.`);
-    if(Math.random() < 0.3) {
-        explore();
-    }
-    updateView();
+    const modal = app.querySelector("#travelModal");
+    let modalContent = /*HTML*/ `
+        <h3>Choose Your Destination</h3>
+        <div class="travel-buttons">
+    `;
+    model.data.locations.forEach((loc, index) => {
+        if (loc.name !== model.data.currentLocation) {
+            modalContent += /*HTML*/ `
+                <button onclick="travelTo(${index}); hideTravelModal()">${loc.name}</button>
+            `;
+        }
+    });
+    modalContent += /*HTML*/ `
+        </div>
+        <button onclick="hideTravelModal()">Cancel</button>
+    `;
+    modal.innerHTML = modalContent;
+    modal.style.display = "block";
+    modal.opacity = "0";
+    setTimeout(() => modal.style.opacity = "1", 10);
 }
 
-function showAdventureInventory(button){
+function hideTravelModal() {
+    const modal = app.querySelector("#travelModal");
+    modal.style.opacity = "0";
+    setTimeout(() => modal.style.display = "none", 300);
+}
+
+function showAdventureInventory(button) {
     const inventoryDiv = button.nextElementSibling;
     const character = model.data.selectedCharacter;
-    const inventoryList = character.inventory.join(", ");
+    const inventoryList = character.inventory.map(item => `${item.name} (${item.count})`).join(", ");
 
-    if(inventoryDiv.style.display === "none" || inventoryDiv.innerHTML === "") {
+    if (inventoryDiv.style.display === "none" || inventoryDiv.innerHTML === "") {
         inventoryDiv.innerHTML = `<strong>Inventory:</strong> ${inventoryList}`;
         inventoryDiv.style.display = "block";
     } else {
         inventoryDiv.style.display = "none";
+    }
+}
+
+function travelTo(locationIndex) {
+    const nextLocation = model.data.locations[locationIndex];
+    const charName = model.data.selectedCharacter.name;
+    const overlay = app.querySelector("#transitionOverlay");
+    overlay.innerHTML = /*HTML*/`
+        <h3>Traveling to ${nextLocation.name}</h3>
+        <p>${nextLocation.description}</p>
+    `;
+    overlay.style.display = "flex";
+    overlay.style.opacity = "0";
+
+    setTimeout(() => {
+        overlay.style.transition = "opacity 0.5s ease";
+        overlay.style.opacity = "1";
+    }, 10);
+    setTimeout(() => {
+        overlay.style.opacity = "0";
+        setTimeout(() => {
+            overlay.style.display = "none";
+            model.data.currentLocation = nextLocation.name;
+            addToLog(`${charName} travels to ${nextLocation.name}.`);
+            if(Math.random() < 0.3) {
+                explore();
+            }
+            updateView();
+        }, 500);
+    }, 2000);
+}
+
+function levelUp(char) {
+    if (char.xp >= char.xpToNextLevel) {
+        char.level += 1;
+        char.xp -= char.xpToNextLevel;
+        char.xpToNextLevel = Math.floor(char.xpToNextLevel * 1.5); // Increase XP needed for next level
+        // Stat increases on level-up
+        char.hp += 20;
+        char.strength += 5;
+        char.magic += 5;
+        if (char.mana) char.mana += 10;
+        if (char.stamina) char.stamina += 10;
+        addToLog(`${char.name} has reached level ${char.level}! Stats increased.`);
     }
 }
