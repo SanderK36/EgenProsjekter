@@ -1,16 +1,18 @@
+/* General body styling */
 body {
     background-color: #0d0d0d;
     font-family: 'Orbitron', sans-serif;
     color: #e6e6e6;
     margin: 0;
-    padding-top: 90px;
+    padding-top: 90px; /* Space for fixed header */
 }
 
+/* Header styling */
 #header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 1em 2em;
     font-size: 120%;
     background: linear-gradient(to right, rgba(26, 26, 26, 0.8), rgba(42, 42, 42, 0.8));
@@ -19,7 +21,7 @@ body {
     width: 100%;
     z-index: 1000;
     flex-wrap: wrap;
-    box-shadow: 0 2 10px rgba(255, 215, 0, 0.3);
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
     border-bottom: 2px solid #ffd700;
 }
 
@@ -38,13 +40,14 @@ body {
 }
 
 @keyframes stars {
-    from {background-position: 0 0;}
-    to {background-position: 1000px 0;}
+    from { background-position: 0 0; }
+    to { background-position: 1000px 0; }
 }
 
+/* Cinematic h1 */
 h1 {
     color: #ffd700;
-    font-size: 2.5em;
+    font-size: 2.2em;
     text-transform: uppercase;
     text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #00b7eb;
     font-weight: bold;
@@ -56,15 +59,78 @@ h1 {
 }
 
 @keyframes glow {
-    0%, 100% {text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #00b7eb;}
+    0%, 100% { text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #00b7eb; }
     50% { text-shadow: 0 0 8px #ffd700, 0 0 15px #ffd700, 0 0 20px #00b7eb; }
 }
 
+/* Character status in header */
+.character-status {
+    font-size: 0.9em;
+    color: #00b7eb;
+    text-shadow: 0 0 5px #00b7eb;
+    margin-left: auto;
+}
+
+/* Game area container */
+.game-area {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+/* Welcome section for character selection */
+.welcome {
+    text-align: center;
+    background: rgba(26, 26, 26, 0.5);
+    border: 3px double #ffd700; /* Fixed typo */
+    border-radius: 10px;
+    padding: 2em;
+    box-shadow: 0 0 15px rgba(0, 183, 235, 0.3);
+    animation: fadeIn 1s ease-in;
+}
+
+.welcome h2 {
+    color: #ffd700;
+    text-shadow: 0 0 5px #ffd700;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+/* Character list layout */
+.character-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+/* Character profile display */
+.character-profile {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #00b7eb;
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: 0 0 10px rgba(0, 183, 235, 0.5);
+}
+
+.character-profile h2 {
+    color: #ffd700;
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+}
+
+.character-profile p {
+    margin: 0.3em 0;
+    font-size: 1em;
+}
+
+/* Holographic button styling */
 .chooseCharBtn {
     border: 2px solid #ffd700;
     background-color: rgba(0, 183, 235, 0.7);
     border-radius: 5px;
-    padding: 0.5em 1em;
+    padding: 0.7em 1.2em;
     cursor: pointer;
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
@@ -73,14 +139,13 @@ h1 {
     transition: all 0.3s ease;
     box-shadow: inset 0 0 10px rgba(0, 183, 235, 0.5);
     position: relative;
+    font-size: 1.1em;
 }
 
 .chooseCharBtn:hover {
     background-color: #ff0000;
     box-shadow: 0 0 15px #ff0000;
     transform: scale(1.05);
-    font-family: 'Orbitron', sans-serif;
-    
 }
 
 .chooseCharBtn::before {
@@ -114,7 +179,29 @@ h1 {
     100% { background: #ff0000; }
 }
 
+/* Dynamic Light Side/Dark Side styling */
+.chooseCharBtn.light-side {
+    border-color: #00b7eb;
+    background-color: rgba(0, 183, 235, 0.7);
+}
+
+.chooseCharBtn.dark-side {
+    border-color: #ff0000;
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+/* Fade-in animation for welcome section */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
 @media (max-width: 600px) {
+    body {
+        padding-top: 80px; /* Adjust for smaller header */
+    }
+
     #header {
         padding: 0.5em 1em;
         font-size: 100%;
@@ -128,8 +215,24 @@ h1 {
         animation: none;
     }
 
+    .character-status {
+        font-size: 0.8em;
+    }
+
+    .welcome {
+        padding: 1em;
+    }
+
+    .welcome h2 {
+        font-size: 1.4em;
+    }
+
     .chooseCharBtn {
-        padding: 0.4em 0.8em;
-        font-size: 0.9em;
+        padding: 0.5em 1em;
+        font-size: 1em;
+    }
+
+    .character-profile {
+        padding: 1em;
     }
 }
