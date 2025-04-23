@@ -81,7 +81,7 @@ function updateView() {
                             <button onclick="travel()">Travel</button>
                             <button onclick="rest()">Rest</button>
                             <button onclick="useItem()">Use Item</button>
-                            ${currentLocation.name === "Tavern" ? '<button onclick="openTavern()">Visit Tavern</button>' : ''}
+                            ${currentLocation.name === "Tavern" ? '<button onclick="openTavern()">Open Shop</button>' : ''}
                             <button onclick="endAdventure()">Return to Party</button>
                         </div>
                     `}
@@ -98,20 +98,17 @@ function updateView() {
             <div id="inventoryModal" class="inventory-modal"></div>
         `;
     }
-    console.log("Setting app HTML content");
     app.innerHTML = html;
     const logDiv = app.querySelector('.log-content');
     if (logDiv) {
-        console.log("Updating adventure log with entries:", model.data.log);
         logDiv.innerHTML = model.data.log.map(log => `<p>${log}</p>`).join('');
         logDiv.scrollTo({ top: logDiv.scrollHeight, behavior: 'smooth' });
     } else {
-        console.log("No adventure log div found");
+        
     }
     const transitionOverlay = app.querySelector('#transitionOverlay');
     if (transitionOverlay) {
         transitionOverlay.style.display = "none";
-        console.log("Ensured transitionOverlay is hidden on initial render");
     }
     const bgImage = new Image();
     bgImage.src = model.data.inAdventure
