@@ -1,13 +1,11 @@
-/* General body styling */
 body {
     background-color: #0d0d0d;
     font-family: 'Orbitron', sans-serif;
     color: #e6e6e6;
     margin: 0;
-    padding-top: 90px; /* Space for fixed header */
+    padding-top: 90px;
 }
 
-/* Header styling */
 #header {
     display: flex;
     align-items: center;
@@ -23,6 +21,7 @@ body {
     flex-wrap: wrap;
     box-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
     border-bottom: 2px solid #ffd700;
+    box-sizing: border-box;
 }
 
 #header::before {
@@ -44,7 +43,6 @@ body {
     to { background-position: 1000px 0; }
 }
 
-/* Cinematic h1 */
 h1 {
     color: #ffd700;
     font-size: 2.2em;
@@ -63,26 +61,38 @@ h1 {
     50% { text-shadow: 0 0 8px #ffd700, 0 0 15px #ffd700, 0 0 20px #00b7eb; }
 }
 
-/* Character status in header */
 .character-status {
     font-size: 0.9em;
     color: #00b7eb;
     text-shadow: 0 0 5px #00b7eb;
-    margin-left: auto;
+    padding: 0.5em 1em;
+    white-space: nowrap;
+    max-width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
 }
 
-/* Game area container */
+.character-status.light-side {
+    color: #00b7eb;
+    text-shadow: 0 0 5px #00b7eb;
+}
+
+.character-status.dark-side {
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff0000;
+}
+
 .game-area {
     max-width: 800px;
     margin: 2em auto;
     padding: 1em;
 }
 
-/* Welcome section for character selection */
 .welcome {
     text-align: center;
     background: rgba(26, 26, 26, 0.5);
-    border: 3px double #ffd700; /* Fixed typo */
+    border: 3px double #ffd700;
     border-radius: 10px;
     padding: 2em;
     box-shadow: 0 0 15px rgba(0, 183, 235, 0.3);
@@ -96,7 +106,6 @@ h1 {
     margin-bottom: 1em;
 }
 
-/* Character list layout */
 .character-list {
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +113,6 @@ h1 {
     gap: 1em;
 }
 
-/* Character profile display */
 .character-profile {
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
@@ -112,6 +120,11 @@ h1 {
     border-radius: 8px;
     padding: 1.5em;
     box-shadow: 0 0 10px rgba(0, 183, 235, 0.5);
+}
+
+.character-profile.dark-side {
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
 
 .character-profile h2 {
@@ -125,27 +138,49 @@ h1 {
     font-size: 1em;
 }
 
-/* Holographic button styling */
+.character-profile .chooseCharBtn {
+    margin: 0.5em;
+}
+
+.character-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: contain; 
+    object-position: center 20%;
+    margin: 0.5em auto 1em;
+    display: block;
+    border: 2px solid #00b7eb;
+    box-shadow: 0 0 10px rgba(0, 183, 235, 0.7);
+    background-color: #0d0d0d;
+}
+
+.character-image.dark-side {
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
 .chooseCharBtn {
-    border: 2px solid #ffd700;
-    background-color: rgba(0, 183, 235, 0.7);
-    border-radius: 5px;
-    padding: 0.7em 1.2em;
+    border: none;
+    background-color: rgba(0, 183, 235, 0.5);
+    border-radius: 8px;
+    padding: 0.6em 1.2em;
     cursor: pointer;
     font-family: 'Orbitron', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 1px;
-    color: #fff;
-    transition: all 0.3s ease;
-    box-shadow: inset 0 0 10px rgba(0, 183, 235, 0.5);
+    color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 8px rgba(0, 183, 235, 0.7), inset 0 0 6px rgba(0, 183, 235, 0.4);
     position: relative;
-    font-size: 1.1em;
+    font-size: 1em;
+    overflow: hidden;
+    text-transform: uppercase;
 }
 
 .chooseCharBtn:hover {
-    background-color: #ff0000;
-    box-shadow: 0 0 15px #ff0000;
     transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(0, 183, 235, 1), inset 0 0 8px rgba(0, 183, 235, 0.6);
 }
 
 .chooseCharBtn::before {
@@ -155,10 +190,11 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+    background: linear-gradient(transparent, rgba(255, 255, 255, 0.15));
     opacity: 0;
     transition: opacity 0.3s ease;
     animation: scanline 2s linear infinite;
+    border-radius: 8px;
 }
 
 .chooseCharBtn:hover::before {
@@ -176,37 +212,44 @@ h1 {
 
 @keyframes flash {
     0% { background: #fff; }
-    100% { background: #ff0000; }
+    100% { background: rgba(0, 183, 235, 0.5); }
 }
 
-/* Dynamic Light Side/Dark Side styling */
 .chooseCharBtn.light-side {
-    border-color: #00b7eb;
-    background-color: rgba(0, 183, 235, 0.7);
+    background-color: rgba(0, 183, 235, 0.5);
+    box-shadow: 0 0 8px rgba(0, 183, 235, 0.7), inset 0 0 6px rgba(0, 183, 235, 0.4);
+}
+
+.chooseCharBtn.light-side:hover {
+    box-shadow: 0 0 12px rgba(0, 183, 235, 1), inset 0 0 8px rgba(0, 183, 235, 0.6);
 }
 
 .chooseCharBtn.dark-side {
-    border-color: #ff0000;
-    background-color: rgba(255, 0, 0, 0.7);
+    background-color: rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7), inset 0 0 6px rgba(255, 0, 0, 0.4);
 }
 
-/* Fade-in animation for welcome section */
+.chooseCharBtn.dark-side:hover {
+    box-shadow: 0 0 12px rgba(255, 0, 0, 1), inset 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
     body {
-        padding-top: 80px; /* Adjust for smaller header */
+        padding-top: 80px;
     }
 
     #header {
         padding: 0.5em 1em;
         font-size: 100%;
         gap: 0.5rem;
-        justify-content: center;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
     }
 
     h1 {
@@ -217,6 +260,8 @@ h1 {
 
     .character-status {
         font-size: 0.8em;
+        padding: 0.3em 0.5em;
+        max-width: 30%;
     }
 
     .welcome {
@@ -229,10 +274,23 @@ h1 {
 
     .chooseCharBtn {
         padding: 0.5em 1em;
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .character-profile {
         padding: 1em;
     }
+
+    .character-image {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+.character-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 183, 235, 1);
+}
+.character-image.dark-side:hover {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 1);
 }
