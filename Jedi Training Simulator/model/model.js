@@ -1,6 +1,13 @@
 const model = {
     app: {
-        currentCharacterId: null
+        currentCharacterId: null,
+        lastRestTime: 0,
+        isSparring: false,
+        playerHealth: 0,
+        opponentHealth: 0, 
+        currentTurn: 0,
+        playerDefending: false,
+        opponentDefending: false,
     },
     input: {},
     data: {
@@ -19,7 +26,8 @@ const model = {
                 stamina: 100,
                 image: "./imgs/padawan/Padawan Aryn.png",
                 lightSide: 65,
-                darkSide: 35
+                darkSide: 35,
+                hp: 250,
             },
             {
                 id: 1,
@@ -35,7 +43,8 @@ const model = {
                 stamina: 100,
                 image: "./imgs/padawan/padawan Kael.png",
                 lightSide: 35,
-                darkSide: 65
+                darkSide: 65,
+                hp: 250,
             }
         ],
         locations: [
@@ -45,7 +54,10 @@ const model = {
         ],
         missions: [
             { id: 1, name: "Master the Light", requirement: { stat: "lightSide", value: 80 }, reward: { xp: 100 }, completed: false },
-            { id: 2, name: "Saber Mastery", requirement: { stat: "saberSkill", value: 50 }, reward: { xp: 75 }, completed: false }
+            { id: 2, name: "Saber Mastery", requirement: { stat: "saberSkill", value: 50 }, reward: { xp: 75 }, completed: false },
+            { id: 3, name: "Endurance Trainee", requirement: { stat: "stamina", value: 150 }, reward: { xp: 100 }, completed: false },
+            { id: 4, name: "Endurance Proffesional", requirement: { stat: "stamina", value: 200 }, reward: { xp: 150 }, completed: false },
+            { id: 5, name: "Endurance Master", requirement: { stat: "stamina", value: 250 }, reward: { xp: 200 }, completed: false },
         ]
     }
 };

@@ -395,6 +395,7 @@ h1 {
     margin: 0.5em;
 }
 
+
 .notification {
     position: fixed;
     top: 120px;
@@ -406,9 +407,10 @@ h1 {
     border: 2px solid #00b7eb;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 183, 235, 0.7);
-    z-index: 2000;
+    z-index: 3000; 
     text-align: center;
     max-width: 300px;
+    transition: opacity 0.3s ease-in-out; 
 }
 
 .notification.dark-side {
@@ -417,7 +419,12 @@ h1 {
 }
 
 .notification.hidden {
-    display: none;
+    opacity: 0;
+    pointer-events: none; 
+}
+
+.notification:not(.hidden) {
+    opacity: 1;
 }
 
 @media (max-width: 600px) {
@@ -449,4 +456,187 @@ h1 {
 
 .character-preview p {
     margin: 0.3em 0;
+}
+
+.character-profile.resting {
+    animation: restGlow 1s ease-in-out;
+}
+
+@keyframes restGlow {
+    0%, 100% { box-shadow: 0 0 10px rgba(0, 183, 235, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(0, 183, 235, 1); }
+}
+
+.chooseCharBtn.disabled {
+    background-color: rgba(100, 100, 100, 0.5);
+    box-shadow: 0 0 8px rgba(100, 100, 100, 0.7);
+    cursor: not-allowed;
+    color: #999;
+}
+
+.chooseCharBtn.disabled:hover {
+    transform: none;
+    box-shadow: 0 0 8px rgba(100, 100, 100, 0.7);
+}
+
+.chooseCharBtn.disabled::before {
+    opacity: 0;
+}
+
+.sparring-view {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #00b7eb;
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: 0 0 10px rgba(0, 183, 235, 0.5);
+}
+
+.sparring-view.dark-side {
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.sparring-view h2 {
+    color: #ffd700;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    text-shadow: 0 0 5px #ffd700;
+}
+
+.combatants {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.combatant {
+    flex: 1;
+    min-width: 200px;
+    background: rgba(26, 26, 26, 0.8);
+    border: 2px solid #00b7eb;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.combatant.dark-side {
+    border: 2px solid #ff0000;
+}
+
+.combatant h3 {
+    color: #ffd700;
+    margin: 0.5em 0;
+}
+
+.combatant p {
+    margin: 0.3em 0;
+    font-size: 1em;
+}
+
+.health-bars {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.health-bar {
+    flex: 1;
+    height: 20px;
+    background: #333;
+    border: 1px solid #00b7eb;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.health-bar .health {
+    height: 100%;
+    background: #00b7eb;
+    transition: width 0.3s ease;
+}
+
+.health-bar .health.opponent {
+    background: #ff0000;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.actions button {
+    margin: 0.3em;
+}
+
+@media (max-width: 600px) {
+    .sparring-view {
+        padding: 1em;
+    }
+
+    .combatants {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .combatant {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .health-bars {
+        flex-direction: column;
+    }
+
+    .health-bar {
+        width: 100%;
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.win-modal, .lose-modal {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00b7eb;
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: 0 0 15px rgba(0, 183, 235, 0.7);
+    color: #e6e6e6;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.win-modal[open], .lose-modal[open] {
+    opacity: 1;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.win-modal.dark-side, .lose-modal.dark-side {
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+.win-modal h2, .lose-modal h2 {
+    color: #ffd700;
+    text-shadow: 0 0 5px #ffd700;
+    margin-bottom: 1em;
+}
+
+.win-modal p, .lose-modal p {
+    margin: 0.5em 0;
+    font-size: 1em;
+}
+
+.win-modal button, .lose-modal button {
+    margin: 0.5em;
 }
