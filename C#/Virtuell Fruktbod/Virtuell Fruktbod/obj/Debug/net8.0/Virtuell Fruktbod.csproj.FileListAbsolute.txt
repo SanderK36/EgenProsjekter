@@ -1,0 +1,15 @@
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Virtuell Fruktbod\Virtuell Fruktbod\bin\Debug\net8.0\Virtuell Fruktbod.exe
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Virtuell Fruktbod\Virtuell Fruktbod\bin\Debug\net8.0\Virtuell Fruktbod.deps.json
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Virtuell Fruktbod\Virtuell Fruktbod\bin\Debug\net8.0\Virtuell Fruktbod.runtimeconfig.json
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Virtuell Fruktbod\Virtuell Fruktbod\bin\Debug\net8.0\Virtuell Fruktbod.dll
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Virtuell Fruktbod\Virtuell Fruktbod\bin\Debug\net8.0\Virtuell Fruktbod.pdb
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Virtuell Fruktbod\Virtuell Fruktbod\obj\Debug\net8.0\Virtuell Fruktbod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Virtuell Fruktbod\Virtuell Fruktbod\obj\Debug\net8.0\Virtuell Fruktbod.AssemblyInfoInputs.cache
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Virtuell Fruktbod\Virtuell Fruktbod\obj\Debug\net8.0\Virtuell Fruktbod.AssemblyInfo.cs
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Virtuell Fruktbod\Virtuell Fruktbod\obj\Debug\net8.0\Virtuell Fruktbod.csproj.CoreCompileInputs.cache
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Virtuell Fruktbod\Virtuell Fruktbod\obj\Debug\net8.0\Virtuell Fruktbod.sourcelink.json
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Virtuell Fruktbod\Virtuell Fruktbod\obj\Debug\net8.0\Virtuell Fruktbod.dll
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Virtuell Fruktbod\Virtuell Fruktbod\obj\Debug\net8.0\refint\Virtuell Fruktbod.dll
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Virtuell Fruktbod\Virtuell Fruktbod\obj\Debug\net8.0\Virtuell Fruktbod.pdb
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Virtuell Fruktbod\Virtuell Fruktbod\obj\Debug\net8.0\Virtuell Fruktbod.genruntimeconfig.cache
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Virtuell Fruktbod\Virtuell Fruktbod\obj\Debug\net8.0\ref\Virtuell Fruktbod.dll
