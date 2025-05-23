@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Hunter Journal (supernatural)/1.0.0": {
+        "runtime": {
+          "Hunter Journal (supernatural).dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Hunter Journal (supernatural)/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

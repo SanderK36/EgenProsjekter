@@ -1,0 +1,15 @@
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Hunter Journal (supernatural)\Hunter Journal (supernatural)\bin\Debug\net8.0\Hunter Journal (supernatural).exe
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Hunter Journal (supernatural)\Hunter Journal (supernatural)\bin\Debug\net8.0\Hunter Journal (supernatural).deps.json
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Hunter Journal (supernatural)\Hunter Journal (supernatural)\bin\Debug\net8.0\Hunter Journal (supernatural).runtimeconfig.json
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Hunter Journal (supernatural)\Hunter Journal (supernatural)\bin\Debug\net8.0\Hunter Journal (supernatural).dll
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Hunter Journal (supernatural)\Hunter Journal (supernatural)\bin\Debug\net8.0\Hunter Journal (supernatural).pdb
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Hunter Journal (supernatural)\Hunter Journal (supernatural)\obj\Debug\net8.0\Hunter Journal (supernatural).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Hunter Journal (supernatural)\Hunter Journal (supernatural)\obj\Debug\net8.0\Hunter Journal (supernatural).AssemblyInfoInputs.cache
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Hunter Journal (supernatural)\Hunter Journal (supernatural)\obj\Debug\net8.0\Hunter Journal (supernatural).AssemblyInfo.cs
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Hunter Journal (supernatural)\Hunter Journal (supernatural)\obj\Debug\net8.0\Hunter Journal (supernatural).csproj.CoreCompileInputs.cache
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Hunter Journal (supernatural)\Hunter Journal (supernatural)\obj\Debug\net8.0\Hunter Journal (supernatural).sourcelink.json
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Hunter Journal (supernatural)\Hunter Journal (supernatural)\obj\Debug\net8.0\Hunter Journal (supernatural).dll
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Hunter Journal (supernatural)\Hunter Journal (supernatural)\obj\Debug\net8.0\refint\Hunter Journal (supernatural).dll
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Hunter Journal (supernatural)\Hunter Journal (supernatural)\obj\Debug\net8.0\Hunter Journal (supernatural).pdb
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Hunter Journal (supernatural)\Hunter Journal (supernatural)\obj\Debug\net8.0\Hunter Journal (supernatural).genruntimeconfig.cache
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\Hunter Journal (supernatural)\Hunter Journal (supernatural)\obj\Debug\net8.0\ref\Hunter Journal (supernatural).dll

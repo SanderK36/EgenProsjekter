@@ -28,11 +28,15 @@
               "RelativeDocumentMoniker": "Virtuell Fruktbod\\Program.cs",
               "ToolTip": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\Virtuell Fruktbod\\Virtuell Fruktbod\\Program.cs",
               "RelativeToolTip": "Virtuell Fruktbod\\Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAkwFUAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAkwEEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T10:56:45.469Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -48,8 +52,7 @@
               "RelativeToolTip": "Virtuell Fruktbod\\Fruit.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAowBkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T10:57:07.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T10:57:07.157Z"
             }
           ]
         }

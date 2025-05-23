@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hunter Journal (supernatural)", "Hunter Journal (supernatural)\Hunter Journal (supernatural).csproj", "{D7A527C0-7BB5-409C-919F-179112E44963}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7A527C0-7BB5-409C-919F-179112E44963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7A527C0-7BB5-409C-919F-179112E44963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7A527C0-7BB5-409C-919F-179112E44963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7A527C0-7BB5-409C-919F-179112E44963}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {266FA966-8668-4799-968C-9DC8119B41DF}
+	EndGlobalSection
+EndGlobal
