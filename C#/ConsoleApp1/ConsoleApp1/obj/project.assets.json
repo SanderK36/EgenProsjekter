@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
-      "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\ConsoleApp1\\ConsoleApp1\\WoW.csproj",
+      "projectName": "WoW",
+      "projectPath": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\ConsoleApp1\\ConsoleApp1\\WoW.csproj",
       "packagesPath": "C:\\Users\\sande\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\ConsoleApp1\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
