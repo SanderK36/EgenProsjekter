@@ -1,0 +1,283 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Main Styling */
+html,
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.7em;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+	padding-bottom: 20px;
+}
+
+p {
+	margin: 10px 0;
+}
+
+/* Utility Classes */
+.container {
+	margin: auto;
+	max-width: 1100px;
+	overflow: auto;
+	padding: 0 20px;
+}
+
+.text-primary {
+	color: rgb(51, 163, 255);
+}
+
+.lead {
+	font-size: 30px;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 18px;
+	color: #fff;
+	background: rgb(51, 163, 255);
+	padding: 13px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: rgb(0, 50, 90);
+}
+
+.btn-light {
+	background: rgb(51, 163, 255);
+}
+
+.dark-blue {
+	background: rgb(0, 50, 90);
+	color: #fff;
+}
+
+.light-blue {
+	background: rgb(51, 163, 255);
+	color: #fff;
+}
+
+.primary-blue {
+	background: rgb(0, 50, 90);
+	color: #fff;
+}
+
+.clr {
+	clear: both;
+}
+
+.l-heading {
+	font-size: 40px;
+	line-height: 1.2;
+}
+
+/* Padding */
+.py-1 {
+	padding: 10px 0;
+}
+.py-2 {
+	padding: 20px 0;
+}
+.py-3 {
+	padding: 30px 0;
+}
+
+/* Navbar */
+#navbar {
+	background: rgb(0, 50, 90);
+	color: #fff;
+	overflow: auto;
+}
+
+#navbar a {
+	color: #fff;
+}
+
+#navbar h1 {
+	float: left;
+	padding-top: 20px;
+}
+
+#navbar ul {
+	list-style: none;
+	float: right;
+}
+
+#navbar ul li {
+	float: left;
+}
+
+#navbar ul li a {
+	display: block;
+	padding: 20px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+	background: rgb(0, 64, 116);
+	color: rgb(51, 163, 255);
+}
+
+/* Showcase */
+#showcase {
+	background: url(../Bilder/198653.jpg.jpg) no-repeat center center/cover;
+	height: 600px;
+}
+
+#showcase .showcase-content {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+#showcase .showcase-content h1 {
+	font-size: 60px;
+	line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+	padding-bottom: 30px;
+	line-height: 1.8em;
+}
+
+/*Home Info */
+#home-info {
+	height: 450px;
+}
+
+#home-info .info-img {
+	float: left;
+	min-width: 50%;
+	background: url(../Bilder/pexels-thomas-evraert-5259756.jpg) no-repeat center center/cover;
+	min-height: 100%;
+	display: block;
+}
+
+#home-info .info-content {
+	float: right;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	padding: 50px 30px;
+	overflow: hidden;
+}
+
+#home-info .info-content p {
+	padding-bottom: 30px;
+}
+
+/* Features */
+.box {
+	float: left;
+	width: 33.3%;
+	padding: 50px;
+	text-align: center;
+}
+
+.box i {
+	margin-bottom: 10px;
+}
+
+/* About Info */
+#about-info .info-right {
+	float: right;
+	width: 50%;
+	min-height: 100%;
+}
+
+#about-info .info-right img {
+	display: block;
+	margin: auto;
+	width: 100%;
+	border-radius: 50%;
+}
+
+#about-info .info-left {
+	float: left;
+	width: 50%;
+	min-height: 100%;
+}
+
+/*Testimonials*/
+#testimonials {
+	height: 100%x;
+	background: url(../Bilder/Hotel-New-York-Exterior.jpg) no-repeat center center/cover;
+	padding-top: 30px;
+}
+
+#testimonials h2 {
+	color: #fff;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+#testimonials .testimonial {
+	padding: 40px;
+	margin-bottom: 60px;
+	padding-bottom: 60px;
+	border-radius: 10px;
+	opacity: 0.9;
+}
+
+#testimonials .testimonial img {
+	width: 100px;
+	float: left;
+	margin-right: 20px;
+	border-radius: 50%;
+}
+
+/* Contact Form */
+#contact-form .form-group {
+	margin-bottom: 20px;
+}
+
+#contact-form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+	height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+	outline: none;
+	border-color: rgb(51, 163, 255);
+}
+
+/* Footer */
+#main-footer {
+	text-align: center;
+	background: rgb(0, 50, 90);
+	color: #fff;
+	padding: 20px;
+}
+
+.logo {
+	width: 50px;
+	height: 60px;
+}

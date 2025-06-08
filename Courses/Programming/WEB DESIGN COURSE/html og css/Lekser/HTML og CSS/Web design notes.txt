@@ -1,0 +1,109 @@
+HTML, CSS, JS Notes!      HTML = the nouns of a web page, CSS = the adjectives and JavaScript = the verbs.
+
+Front end = what you see, the HTML, the CSS and the JS. The Back End is what you don't see. The web server, python, php, etc
+
+HTML stand for HyperText Markup Language
+
+HTML = the skeleton of a webpage
+
+HTML defines the structure og a webpage "put an image here" "put a form here"
+
+CSS stand for Cascading Style Sheets and it defines the style of HTML "make all text purple" "give the first image a yellow border"
+
+CSS = the skin of the HTML skeleton
+
+JavaScript adds logic and interactivity to a page like "do some math" "change color when the user clicks" "Load new data from twitter"
+
+The <Head> element is what we do't see on a website like font files, java scripts files. And the <Body> is what we see on the webstie like colors and fonts
+
+<h1> - <h6>. 1 is the most important heading on your page and the largest and number 6 is the least important one
+
+Use <p> </p> when you're writing a paragraph
+
+Use <b> or <Strong> when you want to make a bold text
+
+Use <i> for italic text or <em> for empasize (same result)
+
+If you want to make an ordered list use <ol> (stands for ordered list) and use <li> for the text in the list like this |<ol>		 |You don't need to add numbers like (1.Red) inside the <li> because it gets added automaticaly
+														       |   <li>Red</li>  |
+														       |   <li>green</li>|					
+														       |   <li>blue</li> |
+													     	       |</ol>            |
+You could also do the same with <ul> to get an unordered list, so you get a * or a black dot instead of numbers. You can also add unordered list inside a order list so you can add what objects have that color
+
+<ol>
+   <li>Red
+     <ul>
+      <li>blood</li>
+      <li>red car</li>
+     </ul>
+     </li>
+   <li>Blue
+     <ul>
+      <li>Water</li>
+      <li>Sky</li>
+     </ul>
+     </li>
+   <li>Green
+     <ul>
+      <li>Grass</li>
+      <li>Boogers</li>
+    </ul>
+    </li>	
+
+<div> is the generic container for flow content. In other words its just a way to group things together	like this <div>
+														  <h1>Wassup</h1>
+                                                                                    
+                                                                                                                  <p>posdfkopsdkfopwsekgjopskgopsdkgopsjdgposjhopsdgopksdpgoks</p>
+                                                                                                                  </div>
+So now i can add a colored box around the headline and the paragraph without screwing with my other codes.
+											
+If i add a div inside a paragraph like this <p>aopsdoapks<div>wassup</div>fopkadopgkodag</p> what i higlighted will seperate into its own line
+
+so instead of a div we can use a span, which looks like this asdaopkfsodfkspodkgpsodg<span>wassup</span>sopfksdopkfoksdopgks
+
+div is a block level element and span is an element that you use in line
+
+To add a source to a page you need to use the element <img src="SOURCE HERE">. There is no closing tag. you can eiter copy a url of a picture on google, or put in a name of a picture you have saved.
+
+to add links you need and anchor tag <a href="www.google.com">write something here to make the link visible</a> and make sure to have "https://" infront of your url
+
+if you want to add another page to your own website that you've created, just add <a href="your textname.html">write what ever you want</a>
+
+<table> is a way to make to display information in a tabular format, and one way of doing this is to put <tr>(tr stands for table row)inside of <table> and inside of <tr> you put a <td>. And to adda border put border="1" inside of <table> so it looks like this. To make another row, just add another <tr>
+																																    <table border="1">
+																													                                 <tr>
+																																         <td>Blue</td>
+																																         <td>Red</td>
+ 																																         </tr>
+																																	 <tr>
+																																         <td>Yellow</td>
+																																	 <td>Green</td>
+																																	 </tr>			
+																															            </table>
+																																	
+To get a header on the table, make another <tr> and add <th> (table header) inside of it
+You can also add a <thead> and add your <th> inside of it and add <tbody> and add your <tr> inside of it like this
+															<table border="1">
+															
+															<thead>
+															   <tr>
+														    	     <th>name</th>
+															     <th>Age</th>
+															   </tr>
+															</thead>
+															<tbody>
+															 <tr>
+															   <td>Sander</td>		
+															   <td>18</td
+															 </tr>
+															 <tr>
+															   <td>Kevin</td
+															   <td>18</td>
+															 </tr>
+															 </tbody>	
+															 </table> 
+
+you can resize images that you add with <img width="50" src="URL">
+
+the <form> tag is what you use to create a box where you can write stuff, like a login page or search for something. and to do that you need to make a <form> tag and put in <input> tags so it looks like this <input type="text" placeholder="username> the "placeholder" is what is written on the box

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vh & Vw Units</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background: #333 url(https://images.unsplash.com/photo-1612477691321-967456bc1c30?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max) no-repeat center center/cover;
+            color: white;
+            height: 100vh;
+            text-align: center;
+            padding: 2rem;
+            padding-top: 15rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            margin: 1rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: #f4f4f4;
+            color: #333;
+            padding: 0.75rem 2rem;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        @media(max-height: 450px) {
+            header {
+                padding-top: 5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga iste eaque assumenda facere eum!</p>
+        <a href="#" class="btn">Find out more</a>
+    </header>
+
+    <section>
+        <h3>About our company</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illum veniam nihil ad! Nihil quis placeat eaque eveniet voluptate quisquam a laborum nobis modi. Natus tenetur odit laborum corrupti possimus architecto perspiciatis, earum minima delectus blanditiis sed in excepturi ipsa vero pariatur id, facere distinctio quas veritatis corporis et reiciendis.</p>
+    </section>
+</body>
+</html>

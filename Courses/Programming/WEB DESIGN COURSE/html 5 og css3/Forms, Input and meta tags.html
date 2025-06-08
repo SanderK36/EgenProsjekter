@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="This is my website description">
+    <meta name="keywords" content="web development, web design, html5, html, css, css5, javascript">
+    <title>Meta Tags</title>
+</head>
+<body>
+    <form action="process.php">
+    <div>
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+    </div>
+    <div>
+        <label for="email">Email</label><br>
+        <input type="text" name="email" id="email" placeholder="Enter your email">
+    </div>
+    <div>
+        <label for="message">Message</label><br>
+        <textarea name="message" id="message" cols="50" rows="10"></textarea>
+    </div>
+    <div>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <div>
+        <label for="age">Age</label><br>
+        <input type="number" name="age" id="age">
+    </div>
+    <div>
+        <label for="birthdate">Birthdate</label><br>
+        <input type="date" name="birthdate" id="birthdate">
+    </div>
+    <div>
+        <label for="membership">Membership</label>
+        <input type="radio" name="membership" value="simple" id="membership"> Simple
+        <input type="radio" name="membership" value="standard" id="membership" checked> Standard
+        <input type="radio" name="membership" value="super" id="membership"> Super
+    </div>
+    <div>
+        <label for="likes">Hobbies</label>
+        <input type="checkbox" name="likes" value="football" id="likes"> Football
+        <input type="checkbox" name="likes" value="gaming" id="likes" checked> Gaming
+        <input type="checkbox" name="likes" value="programming" id="likes"> Programming
+    </div>
+    <input type="submit" value="Submit">
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+</body>
+</html>
