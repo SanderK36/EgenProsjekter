@@ -1,0 +1,15 @@
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\WoW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\WoW.AssemblyInfoInputs.cache
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\WoW.AssemblyInfo.cs
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\WoW.csproj.CoreCompileInputs.cache
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\WoW.sourcelink.json
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\WoW.exe
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\WoW.deps.json
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\WoW.runtimeconfig.json
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\WoW.dll
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\WoW.pdb
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\WoW.dll
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\refint\WoW.dll
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\WoW.pdb
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\WoW.genruntimeconfig.cache
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ref\WoW.dll

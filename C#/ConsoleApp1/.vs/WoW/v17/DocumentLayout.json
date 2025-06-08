@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\ConsoleApp1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{491C6411-7C3D-495F-83EE-9738B82F60DA}|ConsoleApp1\\WoW.csproj|c:\\users\\sande\\desktop\\get academy\\egenprosjekter\\c#\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491C6411-7C3D-495F-83EE-9738B82F60DA}|ConsoleApp1\\WoW.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{491C6411-7C3D-495F-83EE-9738B82F60DA}|ConsoleApp1\\WoW.csproj|c:\\users\\sande\\desktop\\get academy\\egenprosjekter\\c#\\consoleapp1\\consoleapp1\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{491C6411-7C3D-495F-83EE-9738B82F60DA}|ConsoleApp1\\WoW.csproj|solutionrelative:consoleapp1\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{491C6411-7C3D-495F-83EE-9738B82F60DA}|ConsoleApp1\\WoW.csproj|c:\\users\\sande\\desktop\\get academy\\egenprosjekter\\c#\\consoleapp1\\consoleapp1\\boss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{491C6411-7C3D-495F-83EE-9738B82F60DA}|ConsoleApp1\\WoW.csproj|solutionrelative:consoleapp1\\boss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{491C6411-7C3D-495F-83EE-9738B82F60DA}|ConsoleApp1\\WoW.csproj|c:\\users\\sande\\desktop\\get academy\\egenprosjekter\\c#\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{491C6411-7C3D-495F-83EE-9738B82F60DA}|ConsoleApp1\\WoW.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Boss.cs",
               "DocumentMoniker": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\ConsoleApp1\\ConsoleApp1\\Boss.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Boss.cs",
@@ -50,12 +50,11 @@
               "RelativeToolTip": "ConsoleApp1\\Boss.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T12:24:49.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-06T12:24:49.651Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RaidGroup.cs",
               "DocumentMoniker": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\ConsoleApp1\\ConsoleApp1\\RaidGroup.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\RaidGroup.cs",
@@ -63,31 +62,30 @@
               "RelativeToolTip": "ConsoleApp1\\RaidGroup.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAArwGAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T11:07:04.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-05T11:07:04.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Hero.cs",
               "DocumentMoniker": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\ConsoleApp1\\ConsoleApp1\\Hero.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Hero.cs",
               "ToolTip": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\ConsoleApp1\\ConsoleApp1\\Hero.cs",
               "RelativeToolTip": "ConsoleApp1\\Hero.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAAB8AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAmwDMAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T11:06:50.972Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\ConsoleApp1\\ConsoleApp1\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
               "ToolTip": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\ConsoleApp1\\ConsoleApp1\\Program.cs",
               "RelativeToolTip": "ConsoleApp1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T11:06:34.429Z",
               "EditorCaption": ""

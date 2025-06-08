@@ -49,7 +49,7 @@ namespace ConsoleApp1
                 MaxHealth += 10;
                 AttackPower += 5;
                 Health = MaxHealth;
-                Console.WriteLine($"{Name} har nådd level {Level!}");
+                Console.WriteLine($"{Name} har nådd level {Level}!");
             }
         }
     }
