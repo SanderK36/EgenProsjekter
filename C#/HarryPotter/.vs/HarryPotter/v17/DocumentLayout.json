@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\HarryPotter\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E27081E9-B5A2-4CAD-B87F-02F8ED608726}|HarryPotter\\HarryPotter.csproj|c:\\users\\sande\\desktop\\get academy\\egenprosjekter\\c#\\harrypotter\\harrypotter\\magicshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27081E9-B5A2-4CAD-B87F-02F8ED608726}|HarryPotter\\HarryPotter.csproj|solutionrelative:harrypotter\\magicshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27081E9-B5A2-4CAD-B87F-02F8ED608726}|HarryPotter\\HarryPotter.csproj|c:\\users\\sande\\desktop\\get academy\\egenprosjekter\\c#\\harrypotter\\harrypotter\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27081E9-B5A2-4CAD-B87F-02F8ED608726}|HarryPotter\\HarryPotter.csproj|solutionrelative:harrypotter\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27081E9-B5A2-4CAD-B87F-02F8ED608726}|HarryPotter\\HarryPotter.csproj|c:\\users\\sande\\desktop\\get academy\\egenprosjekter\\c#\\harrypotter\\harrypotter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27081E9-B5A2-4CAD-B87F-02F8ED608726}|HarryPotter\\HarryPotter.csproj|solutionrelative:harrypotter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MagicShop.cs",
+              "DocumentMoniker": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\HarryPotter\\HarryPotter\\MagicShop.cs",
+              "RelativeDocumentMoniker": "HarryPotter\\MagicShop.cs",
+              "ToolTip": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\HarryPotter\\HarryPotter\\MagicShop.cs",
+              "RelativeToolTip": "HarryPotter\\MagicShop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T10:16:20.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\HarryPotter\\HarryPotter\\Character.cs",
+              "RelativeDocumentMoniker": "HarryPotter\\Character.cs",
+              "ToolTip": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\HarryPotter\\HarryPotter\\Character.cs",
+              "RelativeToolTip": "HarryPotter\\Character.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAmwCUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T10:04:06.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\HarryPotter\\HarryPotter\\Program.cs",
+              "RelativeDocumentMoniker": "HarryPotter\\Program.cs",
+              "ToolTip": "C:\\Users\\sande\\Desktop\\GET Academy\\EgenProsjekter\\C#\\HarryPotter\\HarryPotter\\Program.cs",
+              "RelativeToolTip": "HarryPotter\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T10:03:17.45Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

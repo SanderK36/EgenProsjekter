@@ -1,0 +1,15 @@
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\HarryPotter\HarryPotter\obj\Debug\net8.0\HarryPotter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\HarryPotter\HarryPotter\obj\Debug\net8.0\HarryPotter.AssemblyInfoInputs.cache
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\HarryPotter\HarryPotter\obj\Debug\net8.0\HarryPotter.AssemblyInfo.cs
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\HarryPotter\HarryPotter\obj\Debug\net8.0\HarryPotter.csproj.CoreCompileInputs.cache
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\HarryPotter\HarryPotter\obj\Debug\net8.0\HarryPotter.sourcelink.json
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\HarryPotter\HarryPotter\bin\Debug\net8.0\HarryPotter.exe
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\HarryPotter\HarryPotter\bin\Debug\net8.0\HarryPotter.deps.json
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\HarryPotter\HarryPotter\bin\Debug\net8.0\HarryPotter.runtimeconfig.json
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\HarryPotter\HarryPotter\bin\Debug\net8.0\HarryPotter.dll
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\HarryPotter\HarryPotter\bin\Debug\net8.0\HarryPotter.pdb
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\HarryPotter\HarryPotter\obj\Debug\net8.0\HarryPotter.dll
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\HarryPotter\HarryPotter\obj\Debug\net8.0\refint\HarryPotter.dll
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\HarryPotter\HarryPotter\obj\Debug\net8.0\HarryPotter.pdb
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\HarryPotter\HarryPotter\obj\Debug\net8.0\HarryPotter.genruntimeconfig.cache
+C:\Users\sande\Desktop\GET Academy\EgenProsjekter\C#\HarryPotter\HarryPotter\obj\Debug\net8.0\ref\HarryPotter.dll
