@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ed1e0854cf.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+        }
+
+        #text6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: x-large;
+            margin-top: 3%;
+        }
+
+        #btns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: x-large;
+        }
+
+        button {
+            font-size: x-large;
+            margin: 15px;
+            width: 100px;
+        }
+
+        #yes {
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+
+        #no {
+            background-color: darkred;
+            color: white;
+            cursor: pointer;
+        }
+
+        #james {
+            width: 400px;
+            height: 200px;
+            margin-top: 5%;
+            margin-left: 35%;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainDiv">
+    </div>
+
+    <script>
+           showPage();
+
+        function showPage() {
+            document.getElementById('mainDiv').innerHTML = /*HTML*/ `
+            <audio id="music" src="./NothingElseMatters.mp3" controls></audio>
+            <button onclick="document.getElementById('music').play()">Spill musikk</button>
+                <h1 id="header">Hei hjertemitt <i class="fa-solid fa-heart"></i></h1>
+            `;
+            
+        
+            setTimeout(changeText, 3000);
+        }
+
+        function changeText() {
+            document.getElementById('header').innerHTML = /*HTML*/ `
+                Happy Valentine!! <i class="fa-solid fa-heart"></i>
+            `;
+            setTimeout(changeText2, 3000);
+        }
+
+        function changeText2() {
+            document.getElementById('header').innerHTML = /*HTML*/ `
+                Jeg ville bare takke deg for å holde ut med en idiot som meg :) <i class="fa-solid fa-heart"></i>
+            `;
+            setTimeout(changeText3, 5000);
+        }
+
+        function changeText3() {
+            document.getElementById('header').innerHTML = /*HTML*/ `
+                Takk for alt du gjør for meg! alt fra de småe til de store tingene <i class="fa-solid fa-heart"></i>
+            `;
+            setTimeout(changeText4, 5000);
+        }
+
+        function changeText4() {
+            document.getElementById('header').innerHTML = /*HTML*/ `
+                Du er det beste som har skjedd meg og jeg klarer ikke å se for meg en fremtid uten deg <i class="fa-solid fa-heart"></i>
+            `;
+            setTimeout(changeText5, 5000);
+        }
+
+        function changeText5() {
+            document.getElementById('header').innerHTML = /*HTML*/ `
+                Jeg elsker deg mer enn noe annet hjertemitt og det kommer jeg alltid til å gjøre <i class="fa-solid fa-heart"></i>
+            `;
+            setTimeout(changeText6, 5000);
+        }
+
+        function changeText6() {
+            document.getElementById('header').innerHTML = /*HTML*/ `
+                <h1 id="text6">Jeg er utrolig solt av deg for alt du får til! ikke glem å gi deg en klapp på skulderen og være stolt over deg selv også!<h1> <i class="fa-solid fa-heart"></i>
+            `;
+            setTimeout(changeText7, 7000);
+        }
+
+        
+
+        function changeText7() {
+            document.getElementById('header').innerHTML = /*HTML*/ `
+                <h1 id="text6">Jeg klarer ikke å vente til den dagen vi bor sammen og får en liten en som er halvt meg og halvt deg<i class="fa-solid fa-baby-carriage"></i> <i class="fa-solid fa-heart"></i></h1>
+            `;
+            setTimeout(changeText8, 7000);
+        }
+
+        function changeText8() {
+            document.getElementById('mainDiv').innerHTML =/*HTML*/ `
+            <h1 id="header">Så vil du være min valentine?<i class="fa-solid fa-heart"></i></h1>
+        <div id="btns">
+            <button id="yes" onclick="answerYes()">Ja</button>
+            <button id="no" onclick="answerNo()">Nei</button>
+        </div>
+            `;
+        }
+
+        function answerYes() {
+            if(answerYes) {
+                document.getElementById('mainDiv').innerHTML = /*HTML*/`
+                <h1 id="header">elsker deg mer enn noe annet<i class="fa-solid fa-heart"></i> gleder meg til egon i mårra<i class="fa-solid fa-heart"></i></h1> 
+        <div>
+            <img id="james" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTZ0OTJra3BvY3IxMzFqZXR2YmZxdXJ1OTF0dGR6dWE0ZHdoenlobSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l1J9CteX3i48gWDSw/giphy.gif" alt="">
+        </div>
+                `;
+                document.getElementById('btns').innerHTML='';
+            }
+        }
+
+        function answerNo() {
+            document.getElementById('header').innerHTML = /*HTML*/`
+                Gi deg.. Svar riktig denne gangen...
+                `;
+                document.getElementById('btns').innerHTML='';
+                setTimeout(changeText8, 2000);
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the home page of Disneyland's Hotel New York">
+    <meta name="keywords" content="Disneyland paris, eurodisney, hotel new york">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    <title>Disneyland | Hotel New York | Contact</title> 
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <a href="index.html"><img class="logo" src="Bilder/logo (2).png" alt=""></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="current" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+    <section id="contact-form" class="py-3">
+        <div class="container">
+            <h1 class="l-heading"><span class="text-primary">Contact</span> Us</h1>
+            <p>Please fill out the form below to contact us</p>
+            <form action="process.php">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact-info" class="dark-blue">
+        <div class="container">
+            <div class="box dark-blue">
+                <i class="fas fa-hotel fa-3x"></i>
+                <h3>Location</h3>
+                <p>Avenue René Goscinny, 77700 Chessy, France</p>
+            </div>
+            <div class="box dark-blue">
+                <i class="fas fa-phone fa-3x"></i>
+                <h3>Phone Number</h3>
+                <p>+33 1 60 30 60 53</p>
+            </div>
+            <div class="box dark-blue">
+                <i class="fas fa-envelope fa-3x"></i>
+                <h3>Email Adress</h3>
+                <p>dlp.guest@disneylandparis.com.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="main-footer">
+        <p>Hotel New York &copy; 2021, All Rights Reserved</p>
+    </footer>
+</body>
+</html>

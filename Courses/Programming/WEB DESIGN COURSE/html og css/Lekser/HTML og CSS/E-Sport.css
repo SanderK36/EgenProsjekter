@@ -1,0 +1,53 @@
+body {
+	background: url(https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+	background-size: cover;
+	font-family: 'Poppins', sans-serif;
+	color: #ffffff;
+}
+
+html{
+	height: 100%;
+}
+
+#content {
+	text-align: center;
+	padding-top: 25%;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 5em;
+}
+
+.btn{
+	color: black;
+	font-size: 16px;
+}
+
+hr {
+	width: 750px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+	color: #fff;
+	background-color: #222222;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+			color: white;
+}
+
+.navbar-inverse .navbar-brand {
+			color: white;
+}
+.navbar-inverse {
+		border-color: #08080800;
+}
+
+h1, h3, hr, button {
+	position: relative;
+	top: -30px;
+	color: white;
+}

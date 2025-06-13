@@ -1,0 +1,74 @@
+b {
+    background: white;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+#mainNavbar .navbar-brand {
+    color: white;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#mainNavbar .nav-link {
+    color: black;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #FF8000;
+}
+
+#OWL {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+#OWLL {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#OW1 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: #FF8000;
+    transition: background 500ms;
+}
+
+@media (max-width: 1200px) {
+    #OW1 {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+}
+
+#OWL6 {
+    width: 10%;
+    height: auto;
+}
+
+#OWLH2 {
+    color: #FFA850;
+    font-weight: 700;
+}
+
+#OWLP {
+    font-weight: 500;
+    line-height: 2;
+}
+
+

@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             RaidGroup raid = new RaidGroup();
-            raid.AddHero("Arthas", "Death Knight", 60, 100);
+            raid.AddHero("Arthas", "Death Knight", 60, 100, 30);
             raid.ShowRaid();
             
             while(true)
